@@ -1,0 +1,33 @@
+﻿<MudCard Class="d-flex flex-column h-100">
+	<MudCardContent>
+		<MudText Typo="Typo.h5">Author: @Author</MudText>
+		<MudText Typo="Typo.body1">@Description</MudText>
+		<MudText Typo="Typo.body2">Genre: @Genre</MudText>
+		<MudRating SelectedValue="@Rating" Disabled="true"></MudRating>
+		<MudButton Color="Color.Secondary" Variant="Variant.Filled" OnClick="AddLike" Disabled="@LikeDisabled">Like</MudButton>
+	</MudCardContent>
+</MudCard>
+
+@code {
+	[Parameter]
+	public string Author { get; set; }
+
+	[Parameter]
+	public string Description { get; set; }
+
+	[Parameter]
+	public string Genre { get; set; }
+
+	[Parameter]
+	public int Rating { get; set; }
+
+	private bool LikeDisabled { get; set; } = false;
+
+	public void AddLike()
+	{
+		Rating += 1;
+		LikeDisabled = true;
+
+	}
+
+}

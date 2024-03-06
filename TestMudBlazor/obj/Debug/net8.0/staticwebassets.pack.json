@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mguer\\source\\repos\\TestMudBlazor\\TestMudBlazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestMudBlazor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TestMudBlazor.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\mguer\\source\\repos\\TestMudBlazor\\TestMudBlazor\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\mguer\\source\\repos\\TestMudBlazor\\TestMudBlazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mguer\\source\\repos\\TestMudBlazor\\TestMudBlazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mguer\\source\\repos\\TestMudBlazor\\TestMudBlazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TestMudBlazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TestMudBlazor.props",
+      "PackagePath": "build\\TestMudBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TestMudBlazor.props",
+      "PackagePath": "buildMultiTargeting\\TestMudBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TestMudBlazor.props",
+      "PackagePath": "buildTransitive\\TestMudBlazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

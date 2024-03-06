@@ -1,0 +1,17 @@
+﻿<MudCard Elevation="2">
+	<MudCardMedia Image="https://via.placeholder.com/400"></MudCardMedia>
+	<MudCardContent>
+		<MudText Typo="Typo.h6" Align="Align.Center">@Name</MudText>
+	</MudCardContent>
+	<MudCardActions>
+		<MudButton Variant="Variant.Filled" Color="Color.Primary" Href="@($"/Details/{Id}")" Class="flex-fill">Details</MudButton>
+	</MudCardActions>
+</MudCard>
+
+@code {
+	[Parameter, EditorRequired]
+	public required string Name { get; set; }
+
+	[Parameter]
+	public int Id { get; set; }
+}

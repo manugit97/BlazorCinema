@@ -1,0 +1,32 @@
+﻿@page "/"
+@using TestMudBlazor.Data
+@using Microsoft.EntityFrameworkCore
+@inject FilmContext Db
+
+<PageTitle>Home</PageTitle>
+
+<MudContainer Class="mt-16">
+	<MudGrid Spacing="4" Justify="Justify.FlexStart">
+		@foreach (var film in Films)
+		{
+			<MudItem xs="3">
+				<FilmCard Id="@film.Id"></FilmCard>
+			</MudItem>
+		}		
+	</MudGrid>
+</MudContainer>
+
+
+
+
+
+
+@code {
+	private List<Film> Films { get; set; }
+
+	protected override async Task OnInitializedAsync()
+	{
+		Films = await Db.Films.ToListAsync();
+	}
+
+}

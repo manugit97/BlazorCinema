@@ -1,0 +1,28 @@
+﻿@page "/Details/{id:int}"
+@using TestMudBlazor.Data
+@using Microsoft.EntityFrameworkCore
+@inject FilmContext Db
+
+<MudContainer Class="mt-16 px-8 d-inline-flex" MaxWidth="MaxWidth.False">
+	<MudItem xs="12" sm="6" md="4">
+		<MudPaper Elevation="2" Class="pa-4" Style="height:400px">
+			<FilmDetailsMediaCard Name="@Film.Name" />
+		</MudPaper>
+	</MudItem>
+	<MudItem Class="flex-grow-1">
+		<MudPaper Elevation="2" Class="pa-4 ml-2 flex-1" Style="height:400px;">
+			<FilmDetailsDescriptionCard Author="@Film.Author" Description="@Film.Description" Genre="@Film.Genre" Rating="@Film.Rating"></FilmDetailsDescriptionCard>
+		</MudPaper>
+	</MudItem>
+</MudContainer>
+
+@code {
+	[Parameter]
+	public int Id { get; set; }
+
+	private Film Film { get; set; }
+
+	protected override async Task OnInitializedAsync() {
+		Film = await Db.Films.FindAsync(Id);
+	}
+}
