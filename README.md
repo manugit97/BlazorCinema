@@ -1,2 +1,2 @@
 # BlazorCinema
-Progetto di prova Blazor per visualizzare card di film.
+Progetto di prova Blazor con libreria MudBlazor per visualizzare card di film.
